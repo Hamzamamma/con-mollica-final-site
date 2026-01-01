@@ -503,52 +503,39 @@ const HomeView = ({ t, allPanini, locations, testimonials, setPage }) => {
 const StoryView = () => {
     const timeline = [
         { year: "2022", event: "Inizio video su TikTok durante le pause in gastronomia" },
-        { year: "2023", event: "Boom virale su TikTok • Apertura Napoli • Apertura Milano Duomo" },
-        { year: "2024", event: "Apertura Roma (Pantheon) • Takeaway Milano Brianza" },
-        { year: "2025", event: "Espansione: Torino, Bari, Padova" }
-    ];
-
-    const values = [
-        { icon: <Icons.Star size={32}/>, title: "Autenticità", desc: "Momenti genuini, sempre veri" },
-        { icon: <Icons.ChefHat size={32}/>, title: "Qualità", desc: "Solo ingredienti italiani DOC" },
-        { icon: <Icons.User size={32}/>, title: "Community", desc: "4+ milioni di follower affezionati" },
-        { icon: <Icons.Globe size={32}/>, title: "Tradizione", desc: "Il vero sapore di Napoli" }
+        { year: "2023", event: "Boom virale • Apertura Napoli • Apertura Milano" },
+        { year: "2024", event: "Apertura Roma • Takeaway Milano" },
+        { year: "2025", event: "Torino, Bari, Padova" }
     ];
 
     return (
         <div className="min-h-screen bg-[#FFF8E7]">
             {/* Hero Section */}
-            <section className="relative py-24 px-6 bg-gradient-to-b from-blue-600 to-blue-700 text-white overflow-hidden">
-                <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'radial-gradient(white 2px, transparent 2px)', backgroundSize: '30px 30px'}}></div>
-                <div className="container mx-auto text-center relative z-10">
-                    <h1 className="text-5xl md:text-7xl font-black uppercase mb-6 text-yellow-400" style={{textShadow: '4px 4px 0 #000'}}>
-                        La Mia Storia
-                    </h1>
-                    <p className="text-2xl md:text-3xl font-bold mb-4">Da una Gastronomia a un Sogno</p>
-                    <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
-                        Un viaggio tra passione, coraggio e successo: scopri come un semplice gioco su TikTok mi ha portato a costruire un brand e una community unica.
+            <section className="py-24 px-6 text-center border-b-4 border-black">
+                <div className="container mx-auto">
+                    <h1 className="text-5xl md:text-7xl font-black uppercase mb-6">La Mia Storia</h1>
+                    <p className="text-xl md:text-2xl font-bold text-gray-600 max-w-3xl mx-auto">
+                        Da una Gastronomia a un Sogno. Un viaggio tra passione, coraggio e successo.
                     </p>
                 </div>
             </section>
 
             {/* Sezione 1: L'Inizio */}
-            <section className="py-20 px-6">
+            <section className="py-16 px-6 border-b-2 border-black/10">
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1">
-                            <div className="inline-block bg-yellow-400 px-4 py-1 font-black text-sm uppercase border-2 border-black rounded-full mb-6 transform -rotate-2">
-                                Capitolo 1
-                            </div>
-                            <h2 className="text-4xl md:text-5xl font-black uppercase mb-6">L'Inizio di Tutto</h2>
+                        <div>
+                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 1</span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">L'Inizio di Tutto</h2>
                             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
                                 Tutto è iniziato in una piccola gastronomia locale, dove preparavo panini ogni giorno con passione. Era un lavoro che amavo, ma mai avrei immaginato che un semplice passatempo potesse cambiare la mia vita.
                             </p>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                <strong className="text-black">Durante le pause, ho iniziato a registrare video su TikTok</strong>, condividendo momenti divertenti e autentici. Quel piccolo gesto, nato per gioco, si è presto trasformato in qualcosa di molto più grande.
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                <strong>Durante le pause, ho iniziato a registrare video su TikTok</strong>, condividendo momenti divertenti e autentici. Quel piccolo gesto, nato per gioco, si è presto trasformato in qualcosa di molto più grande.
                             </p>
                         </div>
-                        <div className="order-1 md:order-2">
-                            <div className="border-4 border-black p-3 bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-2 hover:rotate-0 transition-transform">
+                        <div>
+                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                                 <img src="https://conmollicaosenzashop.it/wp-content/uploads/2024/10/Con-Mollica-o-Senza-1024x1024.webp" className="w-full h-auto" alt="Donato De Caprio" />
                             </div>
                         </div>
@@ -557,24 +544,22 @@ const StoryView = () => {
             </section>
 
             {/* Sezione 2: Il Boom */}
-            <section className="py-20 px-6 bg-white">
+            <section className="py-16 px-6 border-b-2 border-black/10">
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div className="border-4 border-black p-3 bg-blue-50 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] -rotate-2 hover:rotate-0 transition-transform">
+                        <div className="order-2 md:order-1">
+                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                                 <img src="https://conmollicaosenzashop.it/wp-content/uploads/2024/10/Roma__Piazza_di_Pietra_-_Tempio_di_Adriano_1600x-1-1024x768.webp" className="w-full h-auto" alt="Il Boom di TikTok" />
                             </div>
                         </div>
-                        <div>
-                            <div className="inline-block bg-blue-500 text-white px-4 py-1 font-black text-sm uppercase border-2 border-black rounded-full mb-6 transform rotate-1">
-                                Capitolo 2
-                            </div>
-                            <h2 className="text-4xl md:text-5xl font-black uppercase mb-6">Il Boom di TikTok</h2>
+                        <div className="order-1 md:order-2">
+                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 2</span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">Il Boom di TikTok</h2>
                             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
                                 I miei video hanno iniziato a circolare velocemente, guadagnando attenzione e facendo crescere una community di follower affezionati.
                             </p>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                La gastronomia, da semplice negozio di quartiere, è diventata un punto di ritrovo per chi voleva conoscermi o scattare una foto. È stato un periodo surreale, dove <strong className="text-black">il mio lavoro quotidiano si intrecciava con una popolarità inaspettata</strong>, spingendomi a sognare qualcosa di più grande.
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                La gastronomia, da semplice negozio di quartiere, è diventata un punto di ritrovo per chi voleva conoscermi. È stato un periodo surreale, dove <strong>il mio lavoro quotidiano si intrecciava con una popolarità inaspettata</strong>.
                             </p>
                         </div>
                     </div>
@@ -582,30 +567,24 @@ const StoryView = () => {
             </section>
 
             {/* Sezione 3: Nuova Avventura */}
-            <section className="py-20 px-6">
+            <section className="py-16 px-6 border-b-2 border-black/10">
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1">
-                            <div className="inline-block bg-green-500 text-white px-4 py-1 font-black text-sm uppercase border-2 border-black rounded-full mb-6 transform -rotate-1">
-                                Capitolo 3
-                            </div>
-                            <h2 className="text-4xl md:text-5xl font-black uppercase mb-6">Una Nuova Avventura</h2>
+                        <div>
+                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 3</span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">Una Nuova Avventura</h2>
                             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                Con la crescita della mia fama su TikTok, ho dovuto prendere una decisione coraggiosa. Il mio lavoro di tutti i giorni non riusciva più a stare al passo con le nuove sfide.
+                                Con la crescita della mia fama su TikTok, ho dovuto prendere una decisione coraggiosa.
                             </p>
                             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                <strong className="text-black">L'incontro con Steven è stato fondamentale</strong>: insieme abbiamo deciso di trasformare la mia passione in un progetto concreto, aprendo una gastronomia a Napoli. L'entusiasmo e il supporto delle persone hanno reso questo sogno ancora più straordinario.
+                                <strong>L'incontro con Steven è stato fondamentale</strong>: insieme abbiamo deciso di trasformare la mia passione in un progetto concreto, aprendo una gastronomia a Napoli.
                             </p>
-                            <div className="bg-yellow-100 border-2 border-black p-4 rounded-xl mt-6">
-                                <p className="font-bold text-sm">
-                                    🚀 <strong>2023:</strong> Milano, Piazza Diaz (100m dal Duomo)<br/>
-                                    🚀 <strong>2024:</strong> Roma + Takeaway Milano<br/>
-                                    🚀 <strong>2025:</strong> Torino, Bari, Padova
-                                </p>
-                            </div>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Nel 2023 Milano, nel 2024 Roma, nel 2025 Torino, Bari e Padova. L'espansione continua!
+                            </p>
                         </div>
-                        <div className="order-1 md:order-2">
-                            <div className="border-4 border-black p-3 bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rotate-1 hover:rotate-0 transition-transform">
+                        <div>
+                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                                 <img src="https://conmollicaosenzashop.it/wp-content/uploads/2025/08/Con-Mollica-o-Senza-Napoli-1024x578.webp" className="w-full h-auto" alt="Nuova Avventura" />
                             </div>
                         </div>
@@ -614,27 +593,25 @@ const StoryView = () => {
             </section>
 
             {/* Sezione 4: Gratitudine */}
-            <section className="py-20 px-6 bg-white">
+            <section className="py-16 px-6 border-b-2 border-black/10">
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <div className="border-4 border-black p-3 bg-yellow-50 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] -rotate-1 hover:rotate-0 transition-transform">
+                        <div className="order-2 md:order-1">
+                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
                                 <img src="https://conmollicaosenzashop.it/wp-content/uploads/2025/08/Con-Mollica-o-Senza-Milano-1024x578.webp" className="w-full h-auto" alt="Espansione" />
                             </div>
                         </div>
-                        <div>
-                            <div className="inline-block bg-red-500 text-white px-4 py-1 font-black text-sm uppercase border-2 border-black rounded-full mb-6 transform rotate-2">
-                                Capitolo 4
-                            </div>
-                            <h2 className="text-4xl md:text-5xl font-black uppercase mb-6">Espansione e Gratitudine</h2>
+                        <div className="order-1 md:order-2">
+                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 4</span>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">Gratitudine</h2>
                             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                Dopo il successo di Napoli, ci siamo sentiti pronti per una nuova sfida: aprire una seconda gastronomia a Milano.
+                                Questo viaggio, da dipendente a imprenditore, è stato possibile solo grazie al sostegno dei miei follower.
                             </p>
                             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                Questo viaggio, da dipendente a imprenditore, è stato possibile solo grazie al sostegno dei miei follower. <strong className="text-black">Con oltre 4 milioni di persone che ci seguono</strong>, ogni giorno ricordo con gratitudine chi ha creduto in me e in questo sogno.
+                                <strong>Con oltre 4 milioni di persone che ci seguono</strong>, ogni giorno ricordo con gratitudine chi ha creduto in me e in questo sogno.
                             </p>
-                            <p className="text-lg text-gray-600 italic border-l-4 border-yellow-400 pl-4 mt-6">
-                                "La nostra ricerca non si ferma: ogni giorno selezioniamo ingredienti che esprimono la vera qualità italiana, portando salumi e specialità autentiche che raccontano al meglio la nostra tradizione gastronomica."
+                            <p className="text-lg text-gray-600 italic border-l-4 border-yellow-400 pl-4">
+                                "Ogni giorno selezioniamo ingredienti che esprimono la vera qualità italiana."
                             </p>
                         </div>
                     </div>
@@ -642,51 +619,30 @@ const StoryView = () => {
             </section>
 
             {/* Timeline */}
-            <section className="py-20 px-6 bg-black text-white">
+            <section className="py-16 px-6 bg-black text-white">
                 <div className="container mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-black uppercase text-center mb-16 text-yellow-400">Il Viaggio</h2>
-                    <div className="grid md:grid-cols-4 gap-6">
+                    <h2 className="text-3xl md:text-4xl font-black uppercase text-center mb-12">Il Viaggio</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                         {timeline.map((item, i) => (
-                            <div key={i} className="relative">
-                                <div className="bg-yellow-400 text-black font-black text-3xl px-4 py-2 rounded-xl border-2 border-white inline-block mb-4">
-                                    {item.year}
-                                </div>
-                                <p className="text-sm font-medium opacity-90">{item.event}</p>
+                            <div key={i}>
+                                <div className="text-4xl md:text-5xl font-black text-yellow-400 mb-2">{item.year}</div>
+                                <p className="text-sm font-medium opacity-80">{item.event}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Valori */}
-            <section className="py-20 px-6">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-4xl md:text-5xl font-black uppercase mb-4">I Nostri Valori</h2>
-                    <p className="text-lg text-gray-600 mb-12">Quello in cui crediamo e che ci guida ogni giorno</p>
-                    <div className="grid md:grid-cols-4 gap-8">
-                        {values.map((v, i) => (
-                            <div key={i} className="bg-white border-4 border-black p-6 rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 transition-transform">
-                                <div className="text-blue-500 mb-4">{v.icon}</div>
-                                <h3 className="text-xl font-black uppercase mb-2">{v.title}</h3>
-                                <p className="text-gray-600 font-medium">{v.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Finale */}
-            <section className="py-20 px-6 bg-blue-600 text-white text-center">
+            {/* CTA */}
+            <section className="py-16 px-6 text-center">
                 <div className="container mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-black uppercase mb-6 text-yellow-400">Unisciti al Viaggio</h2>
-                    <p className="text-xl mb-8 max-w-2xl mx-auto">
-                        Seguici sui social, vieni a trovarci o ordina online. Il sapore di Napoli ti aspetta!
-                    </p>
+                    <h2 className="text-3xl md:text-4xl font-black uppercase mb-4">Unisciti al Viaggio</h2>
+                    <p className="text-lg text-gray-600 mb-8">Seguici sui social o vieni a trovarci!</p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <a href="https://instagram.com/conmollicaosenza" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-8 py-4 font-black rounded-xl border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-transform flex items-center gap-2">
-                            <Icons.Instagram size={24}/> Instagram
+                        <a href="https://instagram.com/conmollicaosenza" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-8 py-4 font-black uppercase hover:bg-blue-600 transition-colors flex items-center gap-2">
+                            <Icons.Instagram size={20}/> Instagram
                         </a>
-                        <a href="https://tiktok.com/@donatodecaprio" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 text-black px-8 py-4 font-black rounded-xl border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-transform">
+                        <a href="https://tiktok.com/@donatodecaprio" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-8 py-4 font-black uppercase hover:bg-blue-600 transition-colors">
                             TikTok
                         </a>
                     </div>

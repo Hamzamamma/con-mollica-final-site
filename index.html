@@ -501,151 +501,100 @@ const HomeView = ({ t, allPanini, locations, testimonials, setPage }) => {
 };
 
 const StoryView = () => {
-    const timeline = [
-        { year: "2022", event: "Inizio video su TikTok durante le pause in gastronomia" },
-        { year: "2023", event: "Boom virale • Apertura Napoli • Apertura Milano" },
-        { year: "2024", event: "Apertura Roma • Takeaway Milano" },
-        { year: "2025", event: "Torino, Bari, Padova" }
-    ];
-
     return (
-        <div className="min-h-screen bg-[#FFF8E7]">
-            {/* Hero Section */}
-            <section className="py-24 px-6 text-center border-b-4 border-black">
-                <div className="container mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-black uppercase mb-6">La Mia Storia</h1>
-                    <p className="text-xl md:text-2xl font-bold text-gray-600 max-w-3xl mx-auto">
-                        Da una Gastronomia a un Sogno. Un viaggio tra passione, coraggio e successo.
+        <div className="min-h-screen" style={{backgroundColor: '#F5E6C8'}}>
+            {/* Hero */}
+            <section className="py-16 px-6 text-center">
+                <div className="container mx-auto max-w-4xl">
+                    <img src="https://conmollicaosenzashop.it/wp-content/uploads/2024/10/Con-Mollica-o-Senza-1024x1024.webp" alt="Donato" className="w-32 h-32 mx-auto rounded-full border-4 border-black mb-8" />
+                    <p className="text-lg md:text-xl font-bold uppercase tracking-wide mb-4">
+                        Un viaggio tra passione, coraggio e successo: scopri come un semplice gioco su TikTok mi ha portato a costruire un brand e una community unica.
+                    </p>
+                    <p className="text-4xl md:text-5xl font-black uppercase opacity-20">
+                        Da una gastronomia a un sogno
                     </p>
                 </div>
             </section>
 
-            {/* Sezione 1: L'Inizio */}
-            <section className="py-16 px-6 border-b-2 border-black/10">
-                <div className="container mx-auto">
+            {/* L'INIZIO DI TUTTO */}
+            <section className="py-16 px-6">
+                <div className="container mx-auto max-w-5xl">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 1</span>
-                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">L'Inizio di Tutto</h2>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">L'inizio di tutto</h2>
+                            <p className="text-base leading-relaxed mb-4">
                                 Tutto è iniziato in una piccola gastronomia locale, dove preparavo panini ogni giorno con passione. Era un lavoro che amavo, ma mai avrei immaginato che un semplice passatempo potesse cambiare la mia vita.
                             </p>
-                            <p className="text-lg text-gray-700 leading-relaxed">
-                                <strong>Durante le pause, ho iniziato a registrare video su TikTok</strong>, condividendo momenti divertenti e autentici. Quel piccolo gesto, nato per gioco, si è presto trasformato in qualcosa di molto più grande.
+                            <p className="text-base leading-relaxed">
+                                <strong>Durante le pause, ho iniziato a registrare video su TikTok, condividendo momenti divertenti e autentici.</strong> Quel piccolo gesto, nato per gioco, si è presto trasformato in qualcosa di molto più grande.
                             </p>
                         </div>
                         <div>
-                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                                <img src="https://conmollicaosenzashop.it/wp-content/uploads/2024/10/Con-Mollica-o-Senza-1024x1024.webp" className="w-full h-auto" alt="Donato De Caprio" />
-                            </div>
+                            <img src="https://conmollicaosenzashop.it/wp-content/uploads/2024/10/Con-Mollica-o-Senza-1024x1024.webp" alt="Donato" className="w-full rounded-2xl shadow-lg" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Sezione 2: Il Boom */}
-            <section className="py-16 px-6 border-b-2 border-black/10">
-                <div className="container mx-auto">
+            {/* IL BOOM DI TIKTOK */}
+            <section className="py-16 px-6">
+                <div className="container mx-auto max-w-5xl">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1">
-                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                                <img src="https://conmollicaosenzashop.it/wp-content/uploads/2024/10/Roma__Piazza_di_Pietra_-_Tempio_di_Adriano_1600x-1-1024x768.webp" className="w-full h-auto" alt="Il Boom di TikTok" />
-                            </div>
+                        <div>
+                            <img src="https://conmollicaosenzashop.it/wp-content/uploads/2025/08/Con-Mollica-o-Senza-Napoli-1024x578.webp" alt="Il Boom" className="w-full rounded-2xl shadow-lg" />
                         </div>
-                        <div className="order-1 md:order-2">
-                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 2</span>
-                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">Il Boom di TikTok</h2>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                        <div>
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">Il Boom di TikTok</h2>
+                            <p className="text-base leading-relaxed mb-4">
                                 I miei video hanno iniziato a circolare velocemente, guadagnando attenzione e facendo crescere una community di follower affezionati.
                             </p>
-                            <p className="text-lg text-gray-700 leading-relaxed">
-                                La gastronomia, da semplice negozio di quartiere, è diventata un punto di ritrovo per chi voleva conoscermi. È stato un periodo surreale, dove <strong>il mio lavoro quotidiano si intrecciava con una popolarità inaspettata</strong>.
+                            <p className="text-base leading-relaxed">
+                                La gastronomia, da semplice negozio di quartiere, è diventata un punto di ritrovo per chi voleva conoscermi o scattare una foto. È stato un periodo surreale, dove <strong>il mio lavoro quotidiano si intrecciava con una popolarità inaspettata, spingendomi a sognare qualcosa di più grande.</strong>
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Sezione 3: Nuova Avventura */}
-            <section className="py-16 px-6 border-b-2 border-black/10">
-                <div className="container mx-auto">
+            {/* UNA NUOVA AVVENTURA */}
+            <section className="py-16 px-6">
+                <div className="container mx-auto max-w-5xl">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 3</span>
-                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">Una Nuova Avventura</h2>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                Con la crescita della mia fama su TikTok, ho dovuto prendere una decisione coraggiosa.
+                            <h2 className="text-3xl md:text-4xl font-black uppercase mb-6">Una nuova avventura</h2>
+                            <p className="text-base leading-relaxed mb-4">
+                                Con la crescita della mia fama su TikTok, ho dovuto prendere una decisione coraggiosa. Il mio lavoro di tutti i giorni non riusciva più a stare al passo con le nuove sfide, e alla fine ho deciso di andare oltre.
                             </p>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                <strong>L'incontro con Steven è stato fondamentale</strong>: insieme abbiamo deciso di trasformare la mia passione in un progetto concreto, aprendo una gastronomia a Napoli.
+                            <p className="text-base leading-relaxed mb-4">
+                                <strong>L'incontro con Steven è stato fondamentale: insieme abbiamo deciso di trasformare la mia passione in un progetto concreto, aprendo una gastronomia a Napoli.</strong> L'entusiasmo e il supporto delle persone hanno reso questo sogno ancora più straordinario.
                             </p>
-                            <p className="text-lg text-gray-700 leading-relaxed">
-                                Nel 2023 Milano, nel 2024 Roma, nel 2025 Torino, Bari e Padova. L'espansione continua!
+                            <p className="text-base leading-relaxed mb-4">
+                                Ma non ci siamo fermati lì: sempre <strong>nel 2023</strong> abbiamo aperto una seconda sede a Milano, in piazza Diaz, a soli 100 metri dal Duomo.
+                            </p>
+                            <p className="text-base leading-relaxed mb-4">
+                                <strong>Nel 2024</strong>, la nostra espansione è continuata con l'apertura di una nuova gastronomia a Roma, in piazza di Pietra, a soli 2 minuti a piedi dal Pantheon e dalla Fontana di Trevi. Inoltre, abbiamo inaugurato un takeaway a Milano, in viale Brianza 15.
+                            </p>
+                            <p className="text-base leading-relaxed">
+                                <strong>Nel 2025</strong>, espansione al sud Italia e in tante altre importanti città. Siamo arrivati a Torino, Bari e Padova e anche qui ci avete dimostrato il vostro enorme calore.
                             </p>
                         </div>
                         <div>
-                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                                <img src="https://conmollicaosenzashop.it/wp-content/uploads/2025/08/Con-Mollica-o-Senza-Napoli-1024x578.webp" className="w-full h-auto" alt="Nuova Avventura" />
-                            </div>
+                            <img src="https://conmollicaosenzashop.it/wp-content/uploads/2025/08/Con-Mollica-o-Senza-Milano-1024x578.webp" alt="Team" className="w-full rounded-2xl shadow-lg" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Sezione 4: Gratitudine */}
-            <section className="py-16 px-6 border-b-2 border-black/10">
-                <div className="container mx-auto">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1">
-                            <div className="border-4 border-black bg-white p-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-                                <img src="https://conmollicaosenzashop.it/wp-content/uploads/2025/08/Con-Mollica-o-Senza-Milano-1024x578.webp" className="w-full h-auto" alt="Espansione" />
-                            </div>
-                        </div>
-                        <div className="order-1 md:order-2">
-                            <span className="text-sm font-black text-blue-600 uppercase tracking-widest">Capitolo 4</span>
-                            <h2 className="text-3xl md:text-4xl font-black uppercase mt-2 mb-6">Gratitudine</h2>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                Questo viaggio, da dipendente a imprenditore, è stato possibile solo grazie al sostegno dei miei follower.
-                            </p>
-                            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                                <strong>Con oltre 4 milioni di persone che ci seguono</strong>, ogni giorno ricordo con gratitudine chi ha creduto in me e in questo sogno.
-                            </p>
-                            <p className="text-lg text-gray-600 italic border-l-4 border-yellow-400 pl-4">
-                                "Ogni giorno selezioniamo ingredienti che esprimono la vera qualità italiana."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Timeline */}
-            <section className="py-16 px-6 bg-black text-white">
-                <div className="container mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-black uppercase text-center mb-12">Il Viaggio</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                        {timeline.map((item, i) => (
-                            <div key={i}>
-                                <div className="text-4xl md:text-5xl font-black text-yellow-400 mb-2">{item.year}</div>
-                                <p className="text-sm font-medium opacity-80">{item.event}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA */}
-            <section className="py-16 px-6 text-center">
-                <div className="container mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-black uppercase mb-4">Unisciti al Viaggio</h2>
-                    <p className="text-lg text-gray-600 mb-8">Seguici sui social o vieni a trovarci!</p>
-                    <div className="flex flex-wrap justify-center gap-4">
-                        <a href="https://instagram.com/conmollicaosenza" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-8 py-4 font-black uppercase hover:bg-blue-600 transition-colors flex items-center gap-2">
-                            <Icons.Instagram size={20}/> Instagram
-                        </a>
-                        <a href="https://tiktok.com/@donatodecaprio" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-8 py-4 font-black uppercase hover:bg-blue-600 transition-colors">
-                            TikTok
-                        </a>
-                    </div>
+            {/* ESPANSIONE E GRATITUDINE */}
+            <section className="py-16 px-6">
+                <div className="container mx-auto max-w-4xl text-center">
+                    <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">Espansione e Gratitudine</h2>
+                    <p className="text-base leading-relaxed mb-6">
+                        Dopo il successo di Napoli, ci siamo sentiti pronti per una nuova sfida: aprire una seconda gastronomia a Milano. Questo viaggio, da dipendente a imprenditore, è stato possibile solo grazie al sostegno dei miei follower. <strong>Con oltre 4 milioni di persone che ci seguono</strong>, ogni giorno ricordo con gratitudine chi ha creduto in me e in questo sogno. Oggi, sono qui per continuare a condividere questa avventura con tutti voi.
+                    </p>
+                    <p className="text-base leading-relaxed italic text-amber-800">
+                        La nostra ricerca non si ferma: ogni giorno selezioniamo ingredienti che esprimono la vera qualità italiana, portando salumi e specialità autentiche che raccontano al meglio la nostra tradizione gastronomica
+                    </p>
                 </div>
             </section>
         </div>
